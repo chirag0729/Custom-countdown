@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-image: url(images/Silver_main_HEY_1440x810_crop_center\ \(1\).gif);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center left;
+object-fit: fill;
+}
+
+.sd, .startcountdown, .endcountdown {
+    background: rgba(206, 206, 206, 0.5);
+    box-shadow: 2px 3px 2px 4px rgba(135, 133, 133, 0.8);
+    color: rgb(16, 80, 137);
+}
+
+.sd:hover, .startcountdown:hover, .endcountdown:hover {
+    border: 1px solid rgb(16, 80, 137);
+    box-shadow: 2px 3px 2px 4px rgba(25, 88, 155, 0.5);
+}
+
+form {
+    max-width: 520px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input {
+    border-radius: 20px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.c-btn {
+    font-size: 16px;
+    background-color: rgb(16, 80, 137);
+    color: rgba(255, 255, 255, 0.968);
+    border: none;
+    border-radius: 20px;
+    user-select: none;
+    width: 100%;
+}
+
+.c-btn:hover {
+    filter: brightness(120%);
+}
+
+.input-date, .input-title {
+    font-size: 12px;
+    padding: 8px;
+}
+
+.time-spans {
+    font-size: 25px;
+}
+
+.reset-btn, .new-count-btn {
+    max-width: 400px;
+}
+
+.anime-h1{
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 10%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+@media screen and (max-width: 500px) {
+   body{
+       background-size: 100% 100%;
+   } 
+
+   h1 {
+       font-size: 21px;
+   }
+
+   form {
+    font-size: 15px;
+}
+
+.time-spans {
+    font-size: 17px;
+}
+
+.c-btn {
+    font-size: 13px;
+}
+}
+
+@media screen and (max-width: 400px) {
+.time-parameters {
+    display: flex;
+    flex-direction: column !important;
+}
+ }
+
